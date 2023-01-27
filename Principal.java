@@ -1,3 +1,11 @@
+/*
+ * Alina Carías (22539), Ignacio Méndez (22613), Ariela Mishaan (22052), Diego Soto (22737)
+ * Algoritmos y Estructuras de Datos Sección 40
+ * Hoja de Trabajo 2
+ * 30-01-2023
+ * Clase Principal: para la interacción con el usuario
+ */
+
 public class Principal {
     
 }
