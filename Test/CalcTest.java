@@ -1,22 +1,29 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-/**
- * Ignacio Méndez (22613), Ariela Mishaan (22052), Diego Soto
+/*
+ * Alina Carías (22539), Ignacio Méndez (22613), Ariela Mishaan (22052), Diego Soto (22737)
  * Algoritmos y Estructuras de Datos Sección 40
- * Hoja de Trabajo 1
- * 16-01-2023
- * Pruebas unitarias par ala clase Radio. 
+ * Hoja de Trabajo 2
+ * 30-01-2023
+ * Clase CalcTest: Pruebas Unitarias
  */
 
-class RadioTest {
 
-	Radio miRadio = new Radio();
+class CalcTest {
+
+	Calculadora calculadora = new Calculadora();
 	
+	StackHandmade<Integer> stackHandmade = new StackHandmade<Integer>();
+	int numero = 4;
+	stackHandmade.push(numero);
+	stackHandmade.pull(1);
+	stackHandmade.pull(2);
+	stackHandmade.pull(3);
+
 	@Test
-	void ForwardFMTest() {
-		Radio miRadio = new Radio();
-		miRadio.Forward();
+	void pullTest() {
+		
 		double estacion = miRadio.getFMActualStation();
 		assertEquals(88.10000000000001, estacion);
 	}
