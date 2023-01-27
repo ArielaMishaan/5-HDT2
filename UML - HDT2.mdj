@@ -6671,7 +6671,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGF5lY5S+6a8KE="
 							},
-							"name": "SequenceDiagram1",
+							"name": "CalculadoraPostfix",
 							"ownedViews": [
 								{
 									"_type": "UMLFrameView",
@@ -6690,11 +6690,11 @@
 												"$ref": "AAAAAAGF5lY5S+6cK+0="
 											},
 											"font": "Arial;13;0",
-											"left": 32.72998046875,
-											"top": 13,
-											"width": 115.9052734375,
+											"left": 80.72998046875,
+											"top": 53,
+											"width": 109.38623046875,
 											"height": 13,
-											"text": "SequenceDiagram1"
+											"text": "CalculadoraPostfix"
 										},
 										{
 											"_type": "LabelView",
@@ -6703,16 +6703,16 @@
 												"$ref": "AAAAAAGF5lY5S+6cK+0="
 											},
 											"font": "Arial;13;1",
-											"left": 13,
-											"top": 13,
+											"left": 61,
+											"top": 53,
 											"width": 14.72998046875,
 											"height": 13,
 											"text": "sd"
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 8,
-									"top": 8,
+									"left": 56,
+									"top": 48,
 									"width": 692,
 									"height": 592,
 									"nameLabel": {
