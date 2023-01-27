@@ -13,17 +13,12 @@ import org.junit.jupiter.api.Test;
 class CalcTest {
 
 	Calculadora calculadora = new Calculadora();
-	
-	StackHandmade<Integer> stackHandmade = new StackHandmade<Integer>();
+	StackHandmade stack = new StackHandmade<Integer>();
 	int numero = 4;
-	stackHandmade.push(numero);
-	stackHandmade.pull(1);
-	stackHandmade.pull(2);
-	stackHandmade.pull(3);
 
 	@Test
 	void pullTest() {
-		
+		stack.push(4);
 		double estacion = miRadio.getFMActualStation();
 		assertEquals(88.10000000000001, estacion);
 	}
