@@ -12,7 +12,6 @@ public class Calculadora implements IPostfixCalculator {
 
     //Atributos
     private StackHandmade <Integer> stack;
-    private Archivo archivo;
     
     //Constructor
 
@@ -32,7 +31,6 @@ public class Calculadora implements IPostfixCalculator {
      */
     @Override
     public int Calculate(ArrayList postfix_expression) throws Exception {
-        // TODO Auto-generated method stub
         int resultado = 0;
         ArrayList<String> caracteres = postfix_expression;
         for(String caracter : caracteres){
@@ -41,19 +39,19 @@ public class Calculadora implements IPostfixCalculator {
                 stack.push(numero);
             }
             else if(verificar(caracter) == false){
-                if(caracter == "+"){
+                if(caracter.equals("+")){
                     resultado = stack.pull() + stack.pull();
                     stack.push(resultado);
                 }
-                else if(caracter == "-"){
+                else if(caracter.equals("-")){
                     resultado = stack.pull() - stack.pull();
                     stack.push(resultado);
                 }
-                else if(caracter == "*"){
+                else if(caracter.equals("*")){
                     resultado = stack.pull() * stack.pull();
                     stack.push(resultado);
                 }
-                else if(caracter == "/"){
+                else if(caracter.equals("/")){
                     resultado = stack.pull() / stack.pull();
                     stack.push(resultado);
                 }
@@ -66,11 +64,11 @@ public class Calculadora implements IPostfixCalculator {
     private boolean verificar(String caracter){
         try {
             Integer.parseInt(caracter);
-            return true;
         } catch (NumberFormatException e) {
             return false;
-            // TODO: handle exception
         }
+
+        return true;
     }
     
 }

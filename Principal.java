@@ -25,12 +25,16 @@ public class Principal {
             }
             
             try {
-                calculadora.Calculate(oneLine);
-            } catch (Exception e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+                calculadora = new Calculadora();
+                System.out.println("Resultado: " + calculadora.Calculate(oneLine));
+            } catch (Exception nullException) {
+                System.out.println("No se pudo realizar la operación, revise archivo de entrada");
             }
         }
+
+
+
+
         
     }
 
